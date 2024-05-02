@@ -5,99 +5,176 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="./fonts/fonts.css"/>
-    <link rel="stylesheet" href="./styles/global.css"/>
-    <link rel="stylesheet" href="./styles/style.css"/>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <!-- Шапка -->
-    <header>
+    <header class="header">
       <!-- Навигация по сайту -->
-      <nav>
-        <ul>
-          <li>
-            <a href="#Заглушка"></a>
+      <nav class="header__menu">
+        <ul class="header__links-list">
+          <!-- Ссылка без нижнего подчеркивания -->
+          <li class="header__links-list-item">
+            <a
+              class="header__link header__links-list-item_no-bullit header__link_active"
+              href="#Заглушка"
+            ></a>
           </li>
           <li>
-            <a href="#Заглушка"></a>
+            <a class="header__link" href="#Заглушка"></a>
           </li>
           <li>
-            <a href="#Заглушка"></a>
+            <a class="header__link" href="#Заглушка"></a>
           </li>
         </ul>
       </nav>
 
       <!-- Лейбл сайта -->
-      <img src="" alt="">
+      <div class="header__logo">
+        <img class="header__logo-image" src="" alt="" />
+      </div>
 
       <!-- Контактная информация -->
-      <address></address>
+      <address class="address header__address"></address>
     </header>
 
     <!-- Основной блок -->
     <main>
       <!-- Главная -->
-      <section>
+      <section class="cover">
+        <!-- Полупрозрачный блок -->
+        <div class="overlay"></div>
+
         <!-- Заголовок -->
-        <h1>
-          <span></span>
-          <span></span>
-          <span></span>
+        <h1 class="cover__title">
+          <span class="aligned-text"></span>
+          <span class="aligned-text_center"></span>
+          <span class="aligned-text_right"></span>
         </h1>
-        <!-- Подзаголовок -->
-        <h2></h2>
-        <!-- Кнопка -->
-        <button></button>
-      </section>
-      
-      <!-- Посмотреть лоты -->
-      <section>
-        <!-- Заголовок -->
-        <h2></h2>
-        <!-- Карточки -->
-        <div>
-          <article></article>
-          <article></article>
-          <article></article>
+
+        <div class="cover__description">
+          <!-- Подзаголовок -->
+          <h2 class="cover__description-text letter-spacing-extended"></h2>
+
+          <!-- Кнопка -->
+          <button class="bet-button"></button>
         </div>
-        <!-- Ссылка -->
-        <a href="#Заглушка"></a>
+      </section>
+
+      <!-- Посмотреть лоты -->
+      <section class="lots">
+        <!-- Заголовок -->
+        <h2 class="lots__heading"></h2>
+
+        <!-- Карточки -->
+        <ul class="lots__card-list">
+          <!-- Карточка с фильмом -->
+          <li class="lots__card-list-item">
+            <a class="card-link" href="">
+              <!-- Полупрозрачный блок -->
+              <div class="overlay"></div>
+
+              <!-- Карточка -->
+              <article class="card card_type_film">
+                <h3 class="card__title"></h3>
+                <p class="card__text"></p>
+              </article>
+            </a>
+          </li>
+
+          <!-- Карточка с книгой -->
+          <li class="lots__card-list-item">
+            <a class="card-link" href="">
+              <!-- Полупрозрачный блок -->
+              <div class="overlay"></div>
+
+              <!-- Карточка -->
+              <article class="card card_type_book">
+                <h3 class="card__title"></h3>
+                <p class="card__text"></p>
+              </article>
+            </a>
+          </li>
+
+          <!-- Карточка с картиной -->
+          <li class="lots__card-list-item">
+            <a class="card-link" href="">
+              <!-- Полупрозрачный блок -->
+              <div class="overlay"></div>
+
+              <!-- Карточка -->
+              <article class="card card_type_picture">
+                <h3 class="card__title"></h3>
+                <p class="card__text"></p>
+              </article>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Ссылка посмотреть больше -->
+        <a class="lots__look-more-link" href="#Заглушка"></a>
       </section>
 
       <!-- Об аукционе -->
-      <section>
+      <section class="about">
         <!-- Лэйбл -->
-        <img src="" alt="">
+        <div class="about__logo">
+          <img class="about__logo-image" src="" alt="" />
+        </div>
+
         <!-- Текст блока -->
-        <div>
+        <div class="about__column">
           <!-- Заголовок -->
-          <h3></h3>
+          <h3 class="about__title"></h3>
           <!-- Блок бля абзацев -->
-          <div>
-            <p></p>
-            <p></p>
-          </div>
+          <p class="about__text"></p>
+          <p class="about__text"></p>
         </div>
       </section>
     </main>
 
     <!-- Подвал -->
-    <footer>
+    <footer class="footer">
       <!-- Контактная информация -->
-      <address></address>
-      
+      <address class="address"></address>
+
       <!-- Меню 2 -->
-      <ul>
-        <a href="#Заглушка"></a>
-        <a href="#Заглушка"></a>
-        <a href="#Заглушка"></a>
-      </ul>
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-list-item">
+            <a
+              class="footer__menu-link footer__menu-link_active"
+              href="#Заглушка"
+            ></a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link" href="#Заглушка"></a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link" href="#Заглушка"></a>
+          </li>
+        </ul>
+      </nav>
 
       <!-- Соц-сети -->
-      <ul>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+      <ul class="footer__social-list">
+        <li class="footer__social-list-item">
+          <a class="footer__social-link">
+            <img class="footer__social-icon" src="" alt="" />
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a class="footer__social-link">
+            <img class="footer__social-icon" src="" alt="" />
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a class="footer__social-link">
+            <img class="footer__social-icon" src="" alt="" />
+          </a>
+        </li>
       </ul>
     </footer>
   </body>
