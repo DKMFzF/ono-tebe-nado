@@ -3,15 +3,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1052px;
-  height: 105px;
+  min-width: 1052px;
+  min-height: 105px;
   margin: 92px 24px 0 24px;
 }
 
 /* Меню */
 .header__menu {
-  width: 391.48px;
-  height: 22px;
+  min-width: 391.48px;
+  min-height: 22px;
   margin: 44px 0 39px 26px;
 }
 
@@ -200,7 +200,9 @@
 }
 
 .card-link {
+  height: 100%;
   position: relative;
+  display: block;
   text-decoration: none;
 }
 
