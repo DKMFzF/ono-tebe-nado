@@ -89,6 +89,7 @@
   text-transform: uppercase;
 }
 
+/* Затемнение */
 .overlay {
   position: absolute;
   z-index: 0;
@@ -102,7 +103,6 @@
 /* Заголовок */
 .cover__title {
   position: relative;
-  width: 100%;
   margin: 165px 50px 135px 50px;
   width: 1000px;
   height: 355px;
