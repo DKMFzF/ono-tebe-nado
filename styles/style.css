@@ -3,15 +3,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 1052px;
-  min-height: 105px;
+  width: 1052px;
   margin: 92px 24px 0 24px;
 }
 
 /* Меню */
 .header__menu {
-  min-width: 391.48px;
-  min-height: 22px;
+  width: 391.48px;
   margin: 44px 0 39px 26px;
 }
 
@@ -61,7 +59,6 @@
 
 .address {
   width: 240.52px;
-  height: 98px;
 }
 
 .styles__address {
@@ -77,7 +74,6 @@
   position: relative;
   margin-top: 96px;
   width: 100%;
-  height: 757px;
   background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -105,28 +101,30 @@
   position: relative;
   margin: 165px 50px 135px 50px;
   width: 1000px;
-  height: 355px;
   font-size: 100px;
   font-weight: 700;
   letter-spacing: 0.3em;
   line-height: 100px;
 }
 
-.aligned-text {
+.cover__title-all {
   display: block;
+}
+
+.aligned-text {
   line-height: 115px;
   text-align: left;
 }
 
-.aligned-text_center {
+.cover__title-margin {
   margin-top: 20px;
+}
+
+.aligned-text_center {
   text-align: center;
-  display: block;
 }
 
 .aligned-text_right {
-  margin-top: 20px;
-  display: block;
   text-align: right;
 }
 
@@ -141,8 +139,8 @@
 /* Подзаголовок */
 .cover__description {
   position: relative;
+  margin-bottom: 51px;
   width: 1000px;
-  height: 51px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -175,12 +173,11 @@
 .lots {
   margin: 179px 24px 0 24px;
   width: 1052px;
-  height: 692px;
   text-transform: uppercase;
 }
 
 .lots__heading {
-  margin: 0 891px 0 40px;
+  margin-left: 40px;
   font-size: 40px;
   font-weight: 700;
   line-height: 47px;
@@ -190,15 +187,16 @@
 .lots__card-list {
   margin-top: 27px;
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   list-style: none;
 }
 
 .lots__card-list-item {
   width: 334px;
-  height: 563px;
+  min-height: 563px;
 }
-
+ 
 .card-link {
   height: 100%;
   position: relative;
@@ -214,6 +212,9 @@
   width: 100%;
   height: 100%;
   color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card__title {
@@ -236,23 +237,14 @@
 
 .card_type_film {
   background-image: url("../images/card-lot-01.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url("../images/card-lot-02.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url("../images/card-lot-03.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 /* Ссылка внизу */
@@ -265,17 +257,16 @@
   text-align: left;
   text-transform: lowercase;
   text-decoration-thickness: 1.5px;
-  text-underline-offset: 6px;
+  text-underline-offset: 5.5px;
 }
 
 /* Об аукционе */
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
-  grid-template-rows: 275px 1fr;
+  grid-template-rows: auto 1fr;
   grid-column-gap: 25px;
   width: 1052px;
-  height: 595px;
   margin: 146px 24px 0 24px;
 }
 
@@ -305,7 +296,7 @@
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  margin: 40px 0 0 0;
+  margin-top: 136px;
   font-size: 40px;
   font-weight: 700;
   line-height: 46.96px;
@@ -313,7 +304,7 @@
 }
 
 .about__cell-text {
-  margin-top: 8px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -326,23 +317,23 @@
   text-align: left;
 }
 
-.about__text-letter-spacing-0 {
+.about__text-letter-spacing-zero {
   letter-spacing: 0;
 }
 
-.about__text-letter-spacing-2 {
+.about__text-letter-spacing-two {
   letter-spacing: 0.02em;
 }
 
-.about__text-letter-spacing-1 {
+.about__text-letter-spacing-one {
   letter-spacing: -0.01em;
 }
 
-.about__text-letter-spacing-3 {
+.about__text-letter-spacing-three {
   letter-spacing: 0.03em;
 }
 
-.about__text-letter-spacing-4 {
+.about__text-letter-spacing-four {
   letter-spacing: 0.04em;
 }
 
@@ -352,7 +343,6 @@
   justify-content: space-between;
   margin: 180px 50px 88px 50px;
   width: 1000px;
-  height: 98px;
 }
 
 .footer_adress-link {
@@ -362,7 +352,6 @@
 
 .footer__menu {
   width: 149px;
-  height: 64px;
 }
 
 .footer__menu-list {
@@ -390,11 +379,9 @@
   justify-content: space-between;
   gap: 48px;
   list-style: none;
-  width: 240px;
-  height: 48px;
 }
 
 .footer__social-icon {
   width: 100%;
-  height: 100%;
+  height: 48px;
 }
